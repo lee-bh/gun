@@ -1,0 +1,31 @@
+<!doctype html>
+<head>
+</head>
+
+<body>
+	<div id= "myRect" style="transition: all 1s">
+		<img style="width: 200px;" src="http://slffvii.com/wiki/images/d/d0/MAgitek_gun_pew.png">
+	</div>
+
+	
+		<img style="width: 250px; float: right; margin-top: -100px; " src="http://images.clipartlogo.com/files/images/42/420792/baby-head-outline-symbol-people-boy-man-buddy-kid-girl-character-faces-face-child-person-cartoon-crying-someone_p.jpg">
+
+
+
+	<input type="range" id="myPicker" min="30" max="1000"> 빵야!
+	<div id="rangeValue"></div>
+		<script>
+			myPicker.onchange = function(){
+				myRect.style.marginLeft = myPicker.value + "px";
+				rangeValue.innerHTML = myPicker.value;
+			}
+
+
+
+		</script>
+
+<style>
+	input{margin-top: 300px; margin-left: 500px; width: 400px;}
+
+</style>
+</body>
